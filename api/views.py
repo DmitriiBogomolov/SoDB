@@ -76,12 +76,14 @@ def send_confirmation_code(request):
         if is_sent:
             serializer.save(confirmation_code=confirmation_code)
             return Response(
-                {'message': f'Check your email inbox ({email}) for confirmation.'},
+                {'message':
+                    f'Check your email inbox ({email}) for confirmation.'},
                 status=status.HTTP_200_OK
             )
 
         return Response(
-            {'message': f'Here was an error while sending confirmation email.'},
+            {'message':
+                'Here was an error while sending confirmation email.'},
             status=status.HTTP_200_OK
         )
 

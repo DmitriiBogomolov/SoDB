@@ -23,7 +23,6 @@ def send_confirmition_email(email, confirmation_code):
         }
         html_message = render_to_string('confirm-email.html', context=context)
 
-
     return send_mail(
                 subject,
                 plain_message,
