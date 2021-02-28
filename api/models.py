@@ -8,7 +8,7 @@ from django.db import models
 class ConfirmationCode(models.Model):
 
     email = models.EmailField(
-        max_length=30,unique=True,
+        max_length=30, unique=True,
         verbose_name='email')
 
     confirmation_code = models.CharField(
@@ -32,7 +32,7 @@ class User(AbstractUser):
         ADMIN = 'ADM',
 
     bio = models.TextField(
-        max_length=500,blank=True,
+        max_length=500, blank=True,
         verbose_name='bio description')
 
     role = models.TextField(
@@ -50,11 +50,11 @@ class User(AbstractUser):
 
     @property
     def is_moderator(self):
-        return self.role == RoleChoices.MODERATOR
+        return self.role == self.RoleChoices.MODERATOR
 
     @property
     def is_admin(self):
-        return self.role == RoleChoices.ADMIN or self.is_staff
+        return self.role == self.RoleChoices.ADMIN or self.is_staff
 
 
 class Category(models.Model):
@@ -170,7 +170,7 @@ class Comment(models.Model):
     pub_date = models.DateTimeField(
         auto_now_add=True,
         verbose_name='comment publication date')
-        
+
     review = models.ForeignKey(
         Review,
         on_delete=models.SET_NULL,
