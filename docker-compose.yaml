@@ -23,13 +23,10 @@ services:
     env_file:
       - ./.env 
   web:
-    build:
-      context: .
-      dockerfile: Dockerfile-nginx
+    image: margonash/custom_nginx:latest
     volumes:
       - ./helpers/templates:/etc/nginx/templates
       - ./static/:/app/static/
-
     ports:
       - "8080:80"
     environment:

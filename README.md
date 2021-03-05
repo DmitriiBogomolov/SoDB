@@ -1,43 +1,39 @@
-# YaMDb
+# Foobar
 
-REST API с базой отзывов о фильмах, книгах и музыке.
+Foobar is a Python library for dealing with word pluralization.
 
+## Installation
 
-### Зависимости
+Use the package manager [pip](https://pip.pypa.io/en/stable/) to install foobar.
 
-Для запуска приложения должны быть установлены Python3 и Docker.
-
-### Установка
-
-1) поместить .env в дирректорию с проектом.
-2) запустить docker-compose
-```
-docker-compose up
-```
-3) в списке запущеных контейнеров найти id контейнера api_yamdb_web
-```
-docker container ls
-```
-4) применить миграции
-```
-docker exec -it <api_yamdb_web container id> python manage.py migrate
-```
-5) создать пользователя
-```
-docker exec -it <api_yamdb_web container id> python manage.py createsuperuser
-```
-6) для заполнения БД начальными значениями применить фикстуры
-```
-docker exec -it <api_yamdb_web container id> python manage.py loaddata fixtures.json
+```bash
+pip install foobar
 ```
 
-## Развертывание
+## Usage
 
-Аналогично с установкой запустить docker-compose. Настроить на веб-сервере проксировние и статику.
+```python
+import foobar
 
-## Использовались
+foobar.pluralize('word') # returns 'words'
+foobar.pluralize('goose') # returns 'geese'
+foobar.singularize('phenomena') # returns 'phenomenon'
+```
 
-* Django, DRF
-* Docker
-* Gunicorn
-* PostgreSQL
+## Contributing
+Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
+
+Please make sure to update tests as appropriate.
+
+## License
+[MIT](https://choosealicense.com/licenses/mit/)
+
+
+
+
+
+
+https://github.com/dmitriibogomolov/yatube_final/workflows/main/badge.svg
+
+
+![example workflow](https://github.com/dmitriibogomolov/yatube_final/workflows/main/badge.svg)
