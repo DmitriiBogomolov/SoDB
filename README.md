@@ -31,7 +31,7 @@ Please make sure to update tests as appropriate.
 
 
 
-
+1
 
 https://github.com/dmitriibogomolov/yatube_final/workflows/main/badge.svg
 
