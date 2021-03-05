@@ -31,7 +31,7 @@ Please make sure to update tests as appropriate.
 
 
 
-1
+12
 
 https://github.com/DmitriiBogomolov/yamdb_final/workflows/main/badge.svg
 
