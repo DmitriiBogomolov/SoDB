@@ -33,9 +33,9 @@ Please make sure to update tests as appropriate.
 
 1
 
-https://github.com/dmitriibogomolov/yatube_final/workflows/main/badge.svg
+https://github.com/DmitriiBogomolov/yamdb_final/workflows/main/badge.svg
 
-https://github.com/dmitriibogomolov/yatube_final/workflows/main.yml/badge.svg
+https://github.com/DmitriiBogomolov/yamdb_final/workflows/main.yml/badge.svg
 
 
-![example workflow](https://github.com/dmitriibogomolov/yatube_final/workflows/main/badge.svg)
+![example workflow](https://github.com/DmitriiBogomolov/yamdb_final/workflows/main/badge.svg)
