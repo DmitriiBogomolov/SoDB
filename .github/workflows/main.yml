@@ -63,6 +63,7 @@ jobs:
           sudo docker stop $(sudo docker ps -a -q)
           sudo docker rm $(sudo docker ps -a -q)
           sudo rm -rf ~/app
+          sudo docker pull margonash/yamdb
           sudo docker run --name=deploy -d margonash/yamdb
           sudo docker cp deploy:/app ~
           sudo docker stop $(sudo docker ps -a -q)
