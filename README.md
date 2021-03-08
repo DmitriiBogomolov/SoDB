@@ -39,4 +39,4 @@ localhost/redoc
 
 ## Откуп от автотеста
 
-![main](https://github.com/dmitriibogomolov/yamdb_final/yamdb_finalworkflow/main/badge.svg)
+![main](https://github.com/dmitriibogomolov/yamdb_final/workflows/yamdb_final workflow/main/badge.svg)
