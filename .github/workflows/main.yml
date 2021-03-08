@@ -57,13 +57,6 @@ jobs:
         passphrase: ${{ secrets.PASSWORD }}
         key: ${{ secrets.KEY }}
         script: |
-          docker login -u ${{ secrets.DOCKER_USERNAME }} -p ${{ secrets.DOCKER_PASSWORD }}
-          sudo docker stop $(sudo docker ps -a -q)
-          sudo docker rm $(sudo docker ps -a -q)
-          sudo rm -rf ~/app
-          sudo docker run --name=deploy margonash/yamdb
-          sudo docker cp deploy:/app ~
-          sudo docker stop $(sudo docker ps -a -q)
-          sudo docker rm $(sudo docker ps -a -q)
-          cd app
-          sudo docker-compose up
+          pwd
+          whoami
+          
