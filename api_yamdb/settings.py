@@ -31,7 +31,12 @@ SECRET_KEY = 'p&l%385148kslhtyn^##a1)ilz@4zqj=rq&agdol^##zgl9(vs'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['84.201.171.65', 'localhost',]
+ALLOWED_HOSTS = [
+    '178.154.232.153',
+    'localhost',
+    'yatubetest.ml',
+    'www.yatubetest.ml'
+]
 
 
 # Application definition
