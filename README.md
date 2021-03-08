@@ -30,11 +30,9 @@ docker-compose up
 localhost/redoc
 ```
 
-## License
+## Лицензия
 [MIT](https://choosealicense.com/licenses/mit/)
 
-## License
-
-Статус workflow
+## Статус workflow
 
 ![yamdb](https://github.com/dmitriibogomolov/yamdb_final/workflows/yamdb_final%20workflow/badge.svg?branch=master)
