@@ -33,16 +33,8 @@ localhost/redoc
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)
 
+## License
 
+Статус workflow
 
-https://github.com/DmitriiBogomolov/yamdb_final/workflows/main/badge.svg
-
-https://github.com/DmitriiBogomolov/yamdb_final/workflows/main.yml/badge.svg
-
-
-![example workflow](https://github.com/DmitriiBogomolov/yamdb_final/workflows/main/badge.svg)
-
-
-![yamdb](https://github.com/dmitriibogomolov/yamdb_final/workflows/main/badge.svg?branch=master)
-
-![main](https://github.com/dmitriibogomolov/yamdb_final/workflows/main/badge.svg)
+![yamdb](https://github.com/dmitriibogomolov/yamdb_final/workflows/yamdb_final%20workflow/badge.svg?branch=master)
