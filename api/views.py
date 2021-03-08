@@ -186,11 +186,13 @@ class ReviewViewSet(viewsets.ModelViewSet):
         if self.action in ['create']:
             self.permission_classes = [IsAuthenticated]
         elif self.action in ['update', 'partial_update']:
-            self.permission_classes = [IsAuthor |
-                                       IsCustomModerator | IsCustomAdmin]
+            self.permission_classes = [
+                IsAuthor | IsCustomModerator | IsCustomAdmin
+            ]
         elif self.action in ['destroy']:
-            self.permission_classes = [IsAuthor |
-                                       IsCustomModerator | IsCustomAdmin]
+            self.permission_classes = [
+                IsAuthor | IsCustomModerator | IsCustomAdmin
+            ]
         else:
             self.permission_classes = [AllowAny]
         return [permission() for permission in self.permission_classes]
@@ -226,11 +228,13 @@ class CommentViewSet(viewsets.ModelViewSet):
         if self.action in ['create']:
             self.permission_classes = [IsAuthenticated]
         elif self.action in ['update', 'partial_update']:
-            self.permission_classes = [IsAuthor |
-                                       IsCustomModerator | IsCustomAdmin]
+            self.permission_classes = [
+                IsAuthor | IsCustomModerator | IsCustomAdmin
+            ]
         elif self.action in ['destroy']:
-            self.permission_classes = [IsAuthor |
-                                       IsCustomModerator | IsCustomAdmin]
+            self.permission_classes = [
+                IsAuthor | IsCustomModerator | IsCustomAdmin
+            ]
         else:
             self.permission_classes = [AllowAny]
         return [permission() for permission in self.permission_classes]
