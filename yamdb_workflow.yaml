@@ -48,19 +48,35 @@ jobs:
   deploy:
     name: deploy
     runs-on: ubuntu-latest
-    needs: tests
     steps:
-      - name: executing remote ssh commands using password
-        uses: appleboy/ssh-action@master
-        with:
-          host: ${{ secrets.HOST }}
-          username: ${{ secrets.USERNAME }}
-          password: ${{ secrets.PASSWORD }}
-          script: whoami
-      - name: send custom message with args
-        uses: appleboy/telegram-action@master
-        with:
-          to: ${{ secrets.TELEGRAM_TO }}
-          token: ${{ secrets.TELEGRAM_TOKEN }}
-          message: |
-            Project deployment completed successfully!.
+    - name: executing remote ssh commands using password
+      uses: appleboy/ssh-action@master
+      with:
+        host: ${{ secrets.HOST }}
+        username: ${{ secrets.USERNAME }}
+        passphrase: ${{ secrets.PASSWORD }}
+        key: ${{ secrets.KEY }}
+        script: |
+          pwd
+          whoami
+          sudo docker login -u ${{ secrets.DOCKER_USERNAME }} -p ${{ secrets.DOCKER_PASSWORD }}
+          sudo docker stop $(sudo docker ps -a -q)
+          sudo docker rm $(sudo docker ps -a -q)
+          sudo rm -rf ~/app
+          sudo docker pull margonash/yamdb
+          sudo docker run --name=deploy -d margonash/yamdb
+          sudo docker cp deploy:/app ~
+          sudo docker stop $(sudo docker ps -a -q)
+          sudo docker rm $(sudo docker ps -a -q)
+          cd app
+          sudo touch .env
+          sudo bash -c 'echo ${{ secrets.DOT_ENV }} > .env'
+          sudo docker-compose build
+          sudo docker-compose up -d
+    - name: send custom message with args
+      uses: appleboy/telegram-action@master
+      with:
+        to: ${{ secrets.TELEGRAM_TO }}
+        token: ${{ secrets.TELEGRAM_TOKEN }}
+        message: |
+          Project deployment completed successfully!.

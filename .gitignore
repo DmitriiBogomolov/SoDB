@@ -5,6 +5,11 @@ venv/
 .venv/
 sent_emails/
 
+helpers/
+.helpers
+.helpers/
+
+
 
 __pycache__/
 *.py[cod]
@@ -14,7 +19,7 @@ __pycache__/
 .AppleDouble
 .LSOverride
 .vscode
-#.env
+.env
 
 *.sublime-project
 *.sublime-workspace
