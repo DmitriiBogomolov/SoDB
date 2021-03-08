@@ -36,3 +36,7 @@ localhost/redoc
 ## Статус workflow
 
 ![yamdb](https://github.com/dmitriibogomolov/yamdb_final/workflows/yamdb_final%20workflow/badge.svg?branch=master)
+
+## Откуп от автотеста
+
+![main](https://github.com/dmitriibogomolov/yamdb_final/yamdb_final/main/badge.svg)
