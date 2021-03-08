@@ -28,7 +28,7 @@ services:
       - ./helpers/templates:/etc/nginx/templates
       - ./static/:/app/static/
     ports:
-      - "8080:80"
+      - "80:80"
     environment:
       - NGINX_HOST=yatubetest.ml
       - NGINX_PORT=80
