@@ -1,6 +1,6 @@
-# yamdb
+# База отзывов о фильмах, книгах и музыке.
 
-База отзывов о фильмах, книгах и музыке.
+API на Django Rest Framework с полномочным разграничением доступа.
 
 ## Установка
 
@@ -34,6 +34,7 @@ localhost/redoc
 
 1. Django Rest Framework
 2. Docker
+3. GitHub Actions
 
 ## Лицензия
 [MIT](https://choosealicense.com/licenses/mit/)
