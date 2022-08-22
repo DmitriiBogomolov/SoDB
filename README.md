@@ -2,8 +2,6 @@
 
 База отзывов о фильмах, книгах и музыке.
 
-http://www.yatubetest.ml/redoc/
-
 ## установка
 
 Склонировать репозиторий, разместить .env в директории с проектом.
@@ -38,9 +36,3 @@ localhost/redoc
 ## Статус workflow
 
 ![yamdb](https://github.com/dmitriibogomolov/yamdb_final/workflows/yamdb_final%20workflow/badge.svg?branch=master)
-
-## Откуп от автотеста
-
-![main](https://github.com/dmitriibogomolov/yamdb_final/workflows/main/badge.svg)
-
-![main](https://github.com/dmitriibogomolov/yamdb_final/actions/workflows/main/badge.svg)
