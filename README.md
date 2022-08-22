@@ -30,11 +30,13 @@ docker-compose up
 localhost/redoc
 ```
 
-## Инструментарий
+## Технологии
 
 1. Django Rest Framework
-2. Docker
-3. GitHub Actions
+2. PostgreSQL
+3. Docker
+4. Nginx и Gunicorn
+4. GitHub Actions
 
 ## Лицензия
 [MIT](https://choosealicense.com/licenses/mit/)
