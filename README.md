@@ -2,7 +2,7 @@
 
 База отзывов о фильмах, книгах и музыке.
 
-## установка
+## Установка
 
 Склонировать репозиторий, разместить .env в директории с проектом.
 
@@ -29,6 +29,11 @@ docker-compose up
 ```
 localhost/redoc
 ```
+
+## Инструментарий
+
+1. Django Rest Framework
+2. Docker
 
 ## Лицензия
 [MIT](https://choosealicense.com/licenses/mit/)
