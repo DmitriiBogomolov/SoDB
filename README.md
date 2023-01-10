@@ -43,7 +43,3 @@ localhost/redoc
 
 ## Лицензия
 [MIT](https://choosealicense.com/licenses/mit/)
-
-## Статус workflow
-
-![yamdb](https://github.com/dmitriibogomolov/yamdb_final/workflows/yamdb_final%20workflow/badge.svg?branch=master)
