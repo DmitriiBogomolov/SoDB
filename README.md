@@ -26,9 +26,8 @@ DB_PORT=******
 docker-compose up
 ```
 
-## Usage
+## Документация к проекту
 
-Документация к проекту:
 ```
 localhost/redoc
 ```
